@@ -1,14 +1,35 @@
-local parsers = { "python", "lua", "vim", "latex", "zig", "markdown", "markdown-inline" }
+local parsers = {
+    "python",
+    "lua",
+    "vim",
+    "latex",
+    "zig",
+    "markdown",
+    "markdown_inline",
+    "cpp",
+}
+
+local filetypes = {
+    "python",
+    "lua",
+    "vim",
+    "tex",
+    "zig",
+    "markdown",
+    "cpp"
+}
 
 return {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
-    event = "BufReadPre",
-    main = "nvim-treesitter.config",
-    opts = {
-        ensure_installed = parsers,
-        auto_install = false,
-        highlight = { enable = true },
-        indent = { enable = true },
-    },
+    config = function()
+        require("nvim-treesitter").install(parsers)
+
+        vim.api.nvim_create_autocmd("FileType", {
+            pattern = filetypes,
+            callback = function()
+                vim.treesitter.start()
+            end,
+        })
+    end,
 }

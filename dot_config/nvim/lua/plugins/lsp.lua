@@ -1,4 +1,4 @@
-local servers = { "pyrefly", "texlab", "zls" }
+local servers = { "pyrefly", "texlab", "zls", "clangd" }
 
 return {
     "neovim/nvim-lspconfig",

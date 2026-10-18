@@ -26,6 +26,7 @@ tar -czf config-backup.tar.gz ~/.config
 ## Apply the dotfiles
 ```shell
 chezmoi init --apply https://github.com/serge-honcharenko/dotfiles
+brew bundle --file=~/.config/homebrew/Brewfile
 ```
 
 ## Remove the dotfiles

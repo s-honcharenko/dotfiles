@@ -1,0 +1,61 @@
+tap "homebrew/services"
+tap "humansignal/tap"
+tap "jakehilborn/jakehilborn"
+# Mozilla CA certificate store
+brew "ca-certificates"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Manage your dotfiles across multiple diverse machines, securely
+brew "chezmoi"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# User-friendly command-line shell for UNIX-like operating systems
+brew "fish"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# Git-compatible distributed version control system
+brew "jj"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Open client for Cisco AnyConnect VPN
+brew "openconnect"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Terminal multiplexer
+brew "tmux"
+# Parser generator tool
+brew "tree-sitter-cli"
+# Markup-based typesetting system
+brew "typst"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
+# Flash ZSA keyboards from your terminal
+brew "zapp"
+# Programming language designed for robustness, optimality, and clarity
+brew "zig"
+# Memory training application
+cask "anki"
+# Compact TeX distribution as alternative to the full TeX Live / MacTeX
+cask "basictex"
+# OpenAI's official ChatGPT desktop app
+cask "chatgpt"
+# Anthropic's official Claude AI desktop app
+cask "claude"
+cask "font-inter"
+cask "font-jetbrains-mono-nerd-font"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
+# App to manage software development and track bugs
+cask "linear"
+# PDF reader and note-taking application
+cask "skim"
+# Team communication and collaboration software
+cask "slack"
+# Messaging app with a focus on speed and security
+cask "telegram"
+# Gecko based web browser
+cask "zen"
+# Video communication and virtual meeting platform
+cask "zoom"
+# Collect, organise, cite, and share research sources
+cask "zotero"
